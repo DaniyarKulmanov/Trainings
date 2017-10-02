@@ -1,6 +1,6 @@
 # README
 
-This app its just for migrations testings.
+This app is just for migrations testings.
 
 Migrations consist of:
 
