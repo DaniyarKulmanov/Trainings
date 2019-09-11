@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171002073451) do
+ActiveRecord::Schema.define(version: 20171005025106) do
 
   create_table "basket", id: false, force: :cascade do |t|
     t.integer "user_id", null: false
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20171002073451) do
     t.decimal "cost", precision: 5, scale: 2
     t.string "supplier_type"
     t.integer "supplier_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["supplier_type", "supplier_id"], name: "index_products_on_supplier_type_and_supplier_id"
     t.index ["user_id"], name: "index_products_on_user_id"
   end
